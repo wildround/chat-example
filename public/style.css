@@ -21,14 +21,19 @@
 }
 
 .messages {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 
-.messages li:nth-child(odd) {
-   background: #eee;
- }
+.messages li.myself {    
+    display: flex;
+    align-self: flex-end;
+}
 
 .messages li {    
+    display: flex;
+    align-self: flex-start;
     margin-top: 5px;
     list-style-type: none;
     padding: 10px;
@@ -51,4 +56,8 @@ button {
 
 .myself {
     text-align: right;
+}
+
+li.name, .myself.name {
+    background-color: wheat;   
 }

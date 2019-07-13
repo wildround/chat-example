@@ -14,8 +14,11 @@ $("form").submit(e => {
 
 socket.on("chat message", data => {
     if (data.name === username) {
-        $("#messages").append($("<li>").addClass("myself").text(`${data.name}: ${data.msg}`));    
+        $("#messages").append($("<li>").addClass("myself").addClass("name").text(`${data.name}:`));    
+        $("#messages").append($("<li>").addClass("myself").text(`${data.msg}`));    
     } else {
-        $("#messages").append($("<li>").text(`${data.name}: ${data.msg}`));
+        $("#messages").append($("<li>").addClass("name").text(`${data.name}:`));    
+        $("#messages").append($("<li>").addClass("").text(`${data.msg}`));   
+        // $("#messages").append($("<li>").text(`${data.name}: ${data.msg}`));
     }
 });
