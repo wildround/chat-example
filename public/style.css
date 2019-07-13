@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 19px; 
+    font-family: sans-serif;    
+}
+
+#chat {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: wheat;
+    padding: 20px;
+}
+
+.message {
+    display: flex;
+    height: 30px;
+    width: 95%;
+    padding-left: 10px;
+}
+
+.messages {
+    padding: 10px;
+}
+
+.messages li:nth-child(odd) {
+   background: #eee;
+ }
+
+.messages li {    
+    margin-top: 5px;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #fbf6f0;    
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+form {
+    display: flex;
+    width: 95%;
+    position: fixed;
+    bottom: 10px;    
+}
+
+button {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.myself {
+    text-align: right;
+}
